@@ -1,0 +1,238 @@
+/*COLOR GUIDE*/
+
+
+/*
+  Primary Black: #17171F;
+  Secondary Black: #1A1A24;
+  Primary Pink: #C40844;
+  Icons Link Fill: #686868;
+  Default text: #D1D1D1;
+
+*/
+
+
+/*Custom CSS of static home page*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+body,
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+p,
+a,
+h1,
+h2,
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.default-text p {
+    color: #D1D1D1;
+    font-size: 1rem;
+}
+
+
+/* Section 1 */
+
+.main-menu {
+    width: 100%;
+    z-index: 99;
+}
+
+@media(max-width: 992px) {
+    .main-menu {
+        position: fixed;
+    }
+    .main-logo {
+        margin-top: 4rem;
+    }
+}
+
+.main-menu .navbar,
+.section-1,
+.section-2 {
+    background-color: #17171F;
+}
+
+#main-menu .navbar-nav {
+    text-align: center;
+}
+
+.navbar .navbar-toggler {
+    margin: 0 auto;
+}
+
+.nav-link {
+    transition-duration: 0.5s;
+}
+
+.nav-link:hover {
+    color: #C40844 !important;
+}
+
+.section-1,
+.section-2 {
+    min-height: 100%;
+}
+
+.collapsed-menu {
+    background: #1A1A24;
+}
+
+@media (max-width: 776px) {
+    .nav-link {
+        padding: 1rem 1rem !important;
+    }
+}
+
+.particles-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* Typing effect */
+
+.typewriter h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #C40844;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #C40844
+    }
+}
+
+
+/* END Typing effect */
+
+.social-links a {
+    margin: 0px 7px 0px 7px;
+}
+
+.social-links a:hover {
+    border: none;
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+.social-links svg {
+    width: 29px;
+    height: 29px;
+    fill: #686868;
+    transition-duration: 0.5s;
+}
+
+.social-links svg:hover {
+    fill: #C40844;
+}
+
+
+/* END Section 1 */
+
+
+/* Section 2 */
+
+.title-section h2 {
+    text-align: center;
+    color: #C40844;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.about-me p {
+    height: 300px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: justify;
+}
+
+
+/* Parallax Profile Picture*/
+
+#fg {
+    height: 290px;
+    width: 290px;
+    background: url(https://raw.githubusercontent.com/LeonanML/my-icon-pack/master/anibal.jpeg) center no-repeat;
+    background-size: 100%;
+    z-index: 1;
+}
+
+#bg {
+    height: 310px;
+    width: 310px;
+    background-color: #1A1A24;
+    z-index: 0;
+}
+
+.item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-picture {
+    margin: 0 auto;
+    height: 310px;
+    width: 310px;
+}
+
+
+/* END Parallax Profile Picture*/
+
+.resume {
+    padding-top: 30px;
+}
+
+.resume h3 {
+    color: #C40844;
+}
+
+
+/* END Section 2 */
