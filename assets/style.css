@@ -106,6 +106,10 @@ h3 {
     background-color: #17171F;
 }
 
+.section-3 {
+    padding-bottom: 48px;
+}
+
 #main-menu .navbar-nav {
     text-align: center;
 }
@@ -359,13 +363,21 @@ h3 {
 }
 
 .prevenir-card:before {
-    /* Luto Prevenir */
     background-image: url(https://raw.githubusercontent.com/LeonanML/my-icon-pack/master/nature-3125912_1920.jpg);
 }
 
 .wiseup-online-card:before {
-    /* WiseUp Online */
     background-image: url(https://raw.githubusercontent.com/LeonanML/my-icon-pack/master/WiseUpOnline1.png);
+}
+
+.moonshot-card:before {
+    background-position: 0px -73px;
+    background-image: url(https://raw.githubusercontent.com/LeonanML/my-icon-pack/master/moonshotlogo.png);
+}
+
+.medflow-card:before {
+    background-position: 0px -93px;
+    background-image: url(https://raw.githubusercontent.com/LeonanML/my-icon-pack/master/medflow.jpg);
 }
 
 .work-content {
